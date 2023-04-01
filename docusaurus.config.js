@@ -21,6 +21,7 @@ const config = {
   organizationName: 'sieuhuflit', // Usually your GitHub org/user name.
   projectName: 'sieuhuflit.github.io', // Usually your repo name.
   trailingSlash: false,
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
