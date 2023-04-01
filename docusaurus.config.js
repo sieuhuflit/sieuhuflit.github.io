@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'sieuhuflit',
+  title: 'Sieuhuflit',
   tagline: 'Your soul is mine',
   favicon: 'img/favicon.ico',
 
