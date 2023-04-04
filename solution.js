@@ -1,27 +1,13 @@
-function levenshteinDistance(str1, str2) {
-  const edits = [];
-  for (let i = 0; i < str2.length + 1; i++) {
-    const row = [];
-    for (let j = 0; j < str1.length + 1; j++) {
-      row.push(j);
-    }
-    row[0] = i;
-    edits.push(row);
+function kadanesAlgorithm(array) {
+  let maxEndingHere = array[0];
+  let maxSoFar = array[0];
+  for (let i = 1; i < array.length; i++) {
+    const element = array[i];
+    maxEndingHere = Math.max(element, maxEndingHere + element);
+    maxSoFar = Math.max(maxSoFar, maxEndingHere);
   }
-  console.log(edits)
-
-  for (let i = 1; i < str2.length + 1; i++) {
-    for (let j = 1; j < str1.length + 1; j++) {
-      if (str2[i - 1] === str1[j - 1]) {
-        edits[i][j] = edits[i - 1][j - 1];
-      } else {
-        edits[i][j] = 1 + Math.min(edits[i - 1][j - 1], edits[i - 1][j], edits[i][j - 1]);
-      }
-    }
-  }
-  
-  console.log(edits);
-  return edits[str2.length][str1.length];
+  return maxSoFar;
 }
 
-console.log(levenshteinDistance("abc", "yabd"))
+
+console.log(kadanesAlgorithm([3, 5, -9, 1, 3, -2, 3, 4, 7, 2, -9, 6, 3, 1, -5, 4]))
