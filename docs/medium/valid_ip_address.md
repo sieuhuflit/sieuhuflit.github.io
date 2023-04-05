@@ -35,6 +35,7 @@ Sample Output
 :::
 
 ```js title="Solution "
+// O(1) time | O(1) space
 function validIPAddresses(string) {
   const ipAddressFound = [];
   
