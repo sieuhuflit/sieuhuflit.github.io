@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[321],{6414:e=>{e.exports=JSON.parse('{"title":"Medium","description":"Medium","slug":"/category/medium","permalink":"/docs/category/medium","navigation":{"previous":{"title":"Intro","permalink":"/docs/intro"},"next":{"title":"Binary Tree Diameter","permalink":"/docs/medium/binary_tree_diameter"}}}')}}]);
