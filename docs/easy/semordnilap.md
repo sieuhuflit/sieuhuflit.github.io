@@ -1,41 +1,45 @@
 # Semordnilap
 
 :::info Semordnilap
-You're given a string of available characters and a string representing a document that you need to generate. Write a function that determines if you can generate the document using the available characters. If you can generate the document, your function should return true; otherwise, it should return false.
+Semordnilap
+Write a function that takes in a list of unique strings and returns a list of semordnilap pairs.
 
-You're only able to generate the document if the frequency of unique characters in the characters string is greater than or equal to the frequency of unique characters in the document string. For example, if you're given characters = "abcabc" and document = "aabbccc" you cannot generate the document because you're missing one c.
+A semordnilap pair is defined as a set of different strings where the reverse of one word is the same as the forward version of the other. For example the words "diaper" and "repaid" are a semordnilap pair, as are the words "palindromes" and "semordnilap".
 
-The document that you need to create may contain any characters, including special characters, capital letters, numbers, and spaces.
-
-Note: you can always generate the empty string ("").
+The order of the returned pairs and the order of the strings within each pair does not matter.
 
 Sample Input
+
 ```
-characters = "Bste!hetsi ogEAxpelrt x "
-document = "AlgoExpert is the Best!"
+words = ["diaper", "abc", "test", "cba", "repaid"]
 ```
+
 Sample Output
+
 ```
-true
+[["diaper", "repaid"], ["abc", "cba"]]
 ```
+
 :::
+
 ---
 
-
 ```js title="Solution"
-// O(n + m) time | O(c) space
-// c is unique characters in the characters string
-function generateDocument(characters, document) {
-  const characterCounts = {};
-  for (const character of characters) {
-    if (!(character in characterCounts)) characterCounts[character] = 0;
-    characterCounts[character]++;
-  }
+// O(n * m) time | O(n * m) space
+// n is number of words
+// m is the length of the longest word
+function semordnilap(words) {
+  const wordsSet = new Set(words);
+  const semordnilapPairs = [];
 
-  for (const character of document) {
-    if (!(character in characterCounts) || characterCounts[character] === 0) return false;
-    characterCounts[character]--;
+  for (const word of words) {
+    const reverse = word.split("").reverse().join("");
+    if (wordsSet.has(reverse) && reverse !== word) {
+      semordnilapPairs.push([word, reverse]);
+      wordsSet.delete(word);
+      wordsSet.delete(reverse);
+    }
   }
-  return true;
+  return semordnilapPairs;
 }
 ```
