@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[9406],{844:e=>{e.exports=JSON.parse('{"title":"Easy","description":"Easy","slug":"/category/easy","permalink":"/docs/category/easy","navigation":{"previous":{"title":"Intro","permalink":"/docs/intro"},"next":{"title":"Caesar Cipher Encryptor","permalink":"/docs/easy/ceasar_cipher_encryptor"}}}')}}]);
