@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[9406],{844:e=>{e.exports=JSON.parse('{"title":"Easy","description":"Easy","slug":"/category/easy","permalink":"/docs/category/easy","navigation":{"previous":{"title":"Intro","permalink":"/docs/intro"},"next":{"title":"Branch sum","permalink":"/docs/easy/branch_sum"}}}')}}]);
