@@ -18,7 +18,27 @@ Sample Output
 ---
 
 
-```js title="Solution"
+```js title="Solution 1"
+// O(n) time | O(n) space
+function caesarCipherEncryptor(string, key) {
+  const newLetters = [];
+  const newKey = key % 26;
+  for (const letter of string) {
+    newLetters.push(getNewLetter(letter, newKey));
+  }
+  return newLetters.join('');
+}
+
+function getNewLetter(letter, key) {
+  const newLetterCode = letter.charCodeAt() + key;
+  return newLetterCode <= 122
+    ? String.fromCharCode(newLetterCode)
+    : String.fromCharCode(96 + (newLetterCode % 122));
+}
+```
+
+
+```js title="Solution 2"
 // O(n) time  | O(n) space
 function caesarCipherEncryptor(string, key) {
   const newLetters = [];

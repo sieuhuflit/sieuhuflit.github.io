@@ -21,21 +21,77 @@ true
 :::
 ---
 
+```js title="Solution 1"
+// O(m * (n + m)) time | O(1) space - where n is the number
+// of characters and m is the length of the document
+function generateDocument(characters, document) {
+  for (const character of document) {
+    const documentFrequency = countCharacterFrequency(character, document);
+    const charactersFrequency = countCharacterFrequency(character, characters);
+    if (documentFrequency > charactersFrequency) return false;
+  }
 
-```js title="Solution"
-// O(n + m) time | O(c) space
-// c is unique characters in the characters string
+  return true;
+}
+
+function countCharacterFrequency(character, target) {
+  let frequency = 0;
+  for (const char of target) {
+    if (char === character) frequency++;
+  }
+
+  return frequency;
+}
+```
+
+```js title="Solution 2"
+// O(c * (n + m)) time | O(c) space - where n is the number of characters, m is
+// the length of the document, and c is the number of unique characters in the document
+function generateDocument(characters, document) {
+  const alreadyCounted = new Set();
+
+  for (const character of document) {
+    if (character in alreadyCounted) continue;
+
+    const documentFrequency = countCharacterFrequency(character, document);
+    const charactersFrequency = countCharacterFrequency(character, characters);
+    if (documentFrequency > charactersFrequency) return false;
+
+    alreadyCounted.add(character);
+  }
+
+  return true;
+}
+
+function countCharacterFrequency(character, target) {
+  let frequency = 0;
+  for (const char of target) {
+    if (char === character) frequency++;
+  }
+
+  return frequency;
+}
+```
+
+```js title="Solution 3"
+// O(n + m) time | O(c) space - where n is the number of characters, m is
+// the length of the document, and c is the number of unique characters in the characters string
 function generateDocument(characters, document) {
   const characterCounts = {};
+
   for (const character of characters) {
     if (!(character in characterCounts)) characterCounts[character] = 0;
+
     characterCounts[character]++;
   }
 
   for (const character of document) {
     if (!(character in characterCounts) || characterCounts[character] === 0) return false;
+
     characterCounts[character]--;
   }
+
   return true;
 }
+
 ```
