@@ -1,3 +1,8 @@
+---
+tags:
+  - Binary Trees
+---
+
 # Binary Tree Diameter
 
 :::info Binary Tree Diameter

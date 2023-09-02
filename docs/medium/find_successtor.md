@@ -1,3 +1,8 @@
+---
+tags:
+  - Binary Trees
+---
+
 # Find Successor
 
 :::info Find Successor

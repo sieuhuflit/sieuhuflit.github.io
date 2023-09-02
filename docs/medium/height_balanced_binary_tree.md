@@ -1,3 +1,8 @@
+---
+tags:
+  - Binary Trees
+---
+
 # Height Balanced Binary Tree
 
 :::info Height Balanced Binary Tree

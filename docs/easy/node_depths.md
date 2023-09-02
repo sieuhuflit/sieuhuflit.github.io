@@ -1,3 +1,8 @@
+---
+tags:
+  - Binary Trees
+---
+
 # Node Depths
 
 :::info Node Depths

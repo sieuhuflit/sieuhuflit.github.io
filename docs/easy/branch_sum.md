@@ -1,3 +1,8 @@
+---
+tags:
+  - Binary Trees
+---
+
 # Branch sum
 
 :::info Branch sum

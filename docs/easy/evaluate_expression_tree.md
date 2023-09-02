@@ -1,3 +1,8 @@
+---
+tags:
+  - Binary Trees
+---
+
 # Evaluate Expression Tree
 
 :::info Evaluate Expression Tree

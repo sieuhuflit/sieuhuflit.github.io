@@ -1,3 +1,8 @@
+---
+tags:
+  - Binary Trees
+---
+
 # Symmetrical Tree
 
 :::info Symmetrical Tree
