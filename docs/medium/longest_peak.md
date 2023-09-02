@@ -1,3 +1,8 @@
+---
+tags:
+  - Arrays
+---
+
 # Longest Peak
 
 :::info Longest Peak
@@ -15,12 +20,10 @@ Sample Output
 ```
 6 // 0, 10, 6, 5, -1, -3
 ```
-```
+
 :::
 
 ```js title="Solution "
-// Copyright © 2022 AlgoExpert LLC. All rights reserved.
-
 // O(n) time | O(1) space - where n is the length of the input array
 function longestPeak(array) {
   let longestPeakLength = 0;

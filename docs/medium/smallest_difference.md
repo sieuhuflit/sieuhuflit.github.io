@@ -1,3 +1,8 @@
+---
+tags:
+  - Arrays
+---
+
 # Smallest Difference
 
 :::info Smallest Difference

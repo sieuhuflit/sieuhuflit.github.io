@@ -1,3 +1,8 @@
+---
+tags:
+  - Arrays
+---
+
 # Two number sum
 
 :::info Two number sum

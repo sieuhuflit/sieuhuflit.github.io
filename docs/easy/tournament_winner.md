@@ -1,3 +1,8 @@
+---
+tags:
+  - Arrays
+---
+
 # Tournament Winner
 
 :::info Tournament Winner

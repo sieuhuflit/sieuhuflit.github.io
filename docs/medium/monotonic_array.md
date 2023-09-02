@@ -1,3 +1,8 @@
+---
+tags:
+  - Arrays
+---
+
 # Monotonic Array
 
 :::info Monotonic Array

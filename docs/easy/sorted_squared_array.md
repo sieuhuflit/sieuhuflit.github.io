@@ -1,3 +1,8 @@
+---
+tags:
+  - Arrays
+---
+
 # Sorted Squared Array
 
 :::info Sorted Squared Array

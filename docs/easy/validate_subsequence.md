@@ -1,3 +1,8 @@
+---
+tags:
+  - Arrays
+---
+
 # Validate Subsequence
 
 :::info Validate Subsequence
