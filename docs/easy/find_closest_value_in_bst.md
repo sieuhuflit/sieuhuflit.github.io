@@ -1,3 +1,8 @@
+---
+tags:
+  - Binary Search Trees
+---
+
 # Find Closest Value In BST
 
 :::info Find Closest Value In BST
