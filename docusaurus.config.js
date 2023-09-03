@@ -126,7 +126,7 @@ const config = {
       },
       prism: {
         darkTheme: darkCodeTheme,
-        theme: lightCodeTheme,
+        theme: darkCodeTheme,
       },
       algolia: {
         appId: 'QJ4AX85DPY',
