@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[4121],{8070:e=>{e.exports=JSON.parse('[{"label":"Binary Trees","permalink":"/docs/tags/binary-trees","count":10},{"label":"Binary Search Trees","permalink":"/docs/tags/binary-search-trees","count":7},{"label":"Arrays","permalink":"/docs/tags/arrays","count":20}]')}}]);
