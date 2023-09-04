@@ -1,4 +1,4 @@
-# Decorator
+# Decorator 🎨
 
 # Problem
 

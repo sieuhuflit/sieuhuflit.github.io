@@ -1,4 +1,4 @@
-# Factory method
+# Factory method 🏭 
 
 # Problem
 
