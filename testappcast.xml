@@ -4,7 +4,7 @@
         <title>Debt Now App - Appcast</title>
         <item>
             <title>Version 3.2.0</title>
-            <description>Minor updates and improvements.</description>
+            <description>iOS Critical updates and improvements.</description>
             <pubDate>Sun, 30 Dec 2018 12:00:00 +0000</pubDate>
             <enclosure url="https://apps.apple.com/us/app/us-debt-now-national-debt/id903781928" sparkle:version="3.2.0" sparkle:os="ios" />
             <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags>
